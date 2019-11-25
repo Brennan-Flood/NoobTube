@@ -21,5 +21,6 @@ Welcome to NoobTube, a YouTube clone with a twist. Powered by the Mern stack, th
 * 11/25/19: User Auth & Greeting Page
 * 11/26/19: Video Upload
 * 11/27/19: Build Video feed and Video Show
+* 11/30/19: CSS
 * 12/01/19: Likes, Comments, Search
 * 12/02/19: Seed / Finish Styling
