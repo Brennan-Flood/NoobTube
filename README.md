@@ -3,10 +3,10 @@ Background and Overview.
 Welcome to NoobTube, a YouTube clone with a twist. Powered by the Mern stack, this app provides users with an interactive user experience centered around enjoying quick-scope videos. 
 
 ## Functionality and MVP
-* 1. Video Upload and Playback
-* 2. Likes/dislikes for video
-* 3. Comments
-* 4. Search
+* Video Upload and Playback
+* Likes/dislikes for video
+* Comments
+* Search
 Bonus: Number of plays
 Bonus: upvotes/downvotes for comments
 Bonus: channels and subscriptions
