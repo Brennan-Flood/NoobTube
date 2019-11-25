@@ -25,7 +25,9 @@ module.exports = function validateVideoInput(data) {
     errors.duration = 'Duration field is required';
   }
 
-  
+  if (!Validator.isEmpty(data.author)) {
+    errors.author = 'Author field is required';
+  }
 
   return {
     errors, 

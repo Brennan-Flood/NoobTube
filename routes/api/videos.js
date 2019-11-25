@@ -5,3 +5,7 @@ const passport = require('passport');
 
 const Video = require('../../models/Video');
 const validateVideoInput = require('../..validation/videos');
+
+router.get('/', (req, res) => {
+  
+})
