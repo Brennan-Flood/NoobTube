@@ -7,9 +7,9 @@ Welcome to NoobTube, a YouTube clone with a twist. Powered by the Mern stack, th
 * Likes/dislikes for video
 * Comments
 * Search
-Bonus: Number of plays
-Bonus: upvotes/downvotes for comments
-Bonus: channels and subscriptions
+* Bonus: Number of plays
+* Bonus: upvotes/downvotes for comments
+* Bonus: channels and subscriptions
 
 ## Technologies and Technical Challenges 
 * Javascript
