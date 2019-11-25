@@ -18,6 +18,10 @@ const VideoSchema = new Schema({
     type: string, 
     required: true
   },
+  author: {
+    type: string, 
+    required: true
+  },
   duration: {
     type: string,
     required: true

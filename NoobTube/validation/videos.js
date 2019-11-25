@@ -7,6 +7,7 @@ module.exports = function validateVideoInput(data) {
   data.link = validText(data.link) ? data.link : '';
   data.title = validText(data.title) ? data.title : '';
   data.duration = validText(data.duration) ? data.duration : '';
+  data.author = validText(data.author) ? data.author : '';
 
   if (!Validator.isEmpty(data.link)) {
     errors.link = 'Link field is required';
@@ -23,6 +24,8 @@ module.exports = function validateVideoInput(data) {
   if (!Validator.isEmpty(data.duration)) {
     errors.duration = 'Duration field is required';
   }
+
+  
 
   return {
     errors, 
