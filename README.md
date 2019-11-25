@@ -16,6 +16,7 @@ Welcome to NoobTube, a YouTube clone with a twist. Powered by the Mern stack, th
 * MongoDB
 * React
 * Express
+* Node.js
 
 ## Work Breakdown
 * 11/25/19: User Auth & Greeting Page
