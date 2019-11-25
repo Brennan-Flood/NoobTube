@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.logo-div {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/81%2BMcjk1UkL._SX466_.jpg);
+  /* text-align: center; */
+  display: flex;
+  width: 100vw;
+}
+
+.logo {
+  width: 300px;
+  height: 60px;
+  /* text-align: center; */
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px rgb(0, 0, 0);
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  shadow: 10px 10px 8px #fafafa;
+
+}
+
+.searchbar {
+  height: 18px;
+  margin-top: 18px;
+}
