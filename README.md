@@ -18,8 +18,8 @@ Welcome to NoobTube, a YouTube clone with a twist. Powered by the Mern stack, th
 * Express
 
 ## Work Breakdown
-* Day 1: User Auth & Greeting Page
-* Day 2: Video Upload
-* Day 3: Build Video feed and Video Show
-* Day 4: Likes, Comments, Search
-* Day 5: Seed / Finish Styling
+* 11/25/19: User Auth & Greeting Page
+* 11/26/19: Video Upload
+* 11/27/19: Build Video feed and Video Show
+* 12/01/19: Likes, Comments, Search
+* 12/02/19: Seed / Finish Styling
