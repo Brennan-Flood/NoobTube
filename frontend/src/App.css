@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -15,17 +15,27 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
 .App-link {
   color: #09d3ac;
 }
 
+html {
+  width: 100%;
+}
+
 .logo-div {
   background-image: url(https://images-na.ssl-images-amazon.com/images/I/81%2BMcjk1UkL._SX466_.jpg);
-  /* text-align: center; */
   display: flex;
-  width: 100vw;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  right: 0vw;
+  top: 0vh;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.8;
 }
 
 .logo {
@@ -41,11 +51,63 @@
   margin-top: 1px;
   margin-bottom: 1px;
   margin-left: 10px;
-  shadow: 10px 10px 8px #fafafa;
+  /* shadow: 10px 10px 8px #fafafa; */
 
 }
 
 .searchbar {
   height: 18px;
   margin-top: 18px;
+}
+
+.header-div {
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.login {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background: black;
+}
+
+.signup {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background: black;
+  margin-right: 5px;
+}
+
+.login-div {
+  position: fixed;
+  right: 5px;
+  top: 6px;
+}
+
+.current-user {
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 32, 118);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.nav-buttons {
+
+}
+
+.nav-image {
+  width: 50px;
+  height: 50px;
 }

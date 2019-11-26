@@ -1,25 +1,31 @@
 import React from 'react';
+import VideoIndexItem from '../videos/video_index_item';
 
 class Profile extends React.Component {
-  constructor(props) {
-    super(props);
 
-    this.state = {
-      tweets: []
-    }
+  componentDidMount() {
+    // console.log(this.props.currentUser.id)
+    this.props.fetchUserVideos(this.props.currentUser.id);
   }
 
-  componentWillMount() {
-    console.log(this.props.currentUser.id)
-  }
-
-  componentWillReceiveProps(newState) {
-  }
+  // componentWillReceiveProps(newState) {
+  //   this.setState({ videos: newState.videos });
+  // }
 
   render() {
-      return (<div></div>)
-    
-    
+    console.log(this.props)
+    if (this.props.videos.length === 0) {
+      return (<div>This user has no videos.</div>)
+    } else {
+      return (
+        <div>
+          <h2>All of this User's Videos</h2>
+          {this.props.videos.map((video, i) => (
+            <VideoIndexItem key={i} video={video}/>
+          ))}
+        </div>
+      );
+    }
   }
 }
 

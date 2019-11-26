@@ -3,6 +3,7 @@ const app = express();
 const db = require('./config/keys').mongoURI;
 const mongoose = require('mongoose')
 const users = require("./routes/api/users");
+const videos = require("./routes/api/videos")
 const bodyParser = require('body-parser');
 const passport = require('passport');
 
@@ -16,7 +17,7 @@ app.use(bodyParser.json());
 app.use(passport.initialize());
 require('./config/passport')(passport);
 app.use("/api/users", users);
-
+app.use("/api/videos", videos);
 
 const port = process.env.PORT || 5000;
 

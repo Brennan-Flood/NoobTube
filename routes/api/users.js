@@ -17,7 +17,6 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
 })
 
 router.post('/register', (req, res) => {
-  // Check to make sure nobody has already registered with a duplicate email
   const { errors, isValid } = validateRegisterInput(req.body);
 
   if (!isValid) {
@@ -74,12 +73,11 @@ router.post('/login', (req, res) => {
       bcrypt.compare(password, user.password)
         .then(isMatch => {
           if (isMatch) {
-            const payload = { id: user.id, name: user.name };
+            const payload = { id: user.id, handle: user.handle };
 
             jwt.sign(
               payload,
               keys.secretOrKey,
-              // Tell the key to expire in one hour
               { expiresIn: 3600 },
               (err, token) => {
                 res.json({
@@ -94,6 +92,5 @@ router.post('/login', (req, res) => {
     })
 })
 
-router.get("/test", (req, res) => res.json({ msg: "This is the users route" }));
 
 module.exports = router;

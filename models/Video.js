@@ -7,7 +7,7 @@ const VideoSchema = new Schema({
     ref: 'users'
   },
   link: {
-    type: string,
+    type: String,
     required: true 
   },
   date: {
@@ -15,26 +15,26 @@ const VideoSchema = new Schema({
     default: Date.now
   },
   title: {
-    type: string, 
+    type: String, 
     required: true
   },
   author: {
-    type: string, 
+    type: String, 
     required: true
   },
   duration: {
-    type: string,
+    type: String,
     required: true
   },
   // comments: {
-  //   ... ? 
+    
   // },
-  likes: {
-    type: integer
-  }, 
-  dislikes: {
-    type: integer
-  }
+  // likes: {
+  //   type: Integer,
+  // }, 
+  // dislikes: {
+  //   type: Integer
+  // }
 });
 
 module.exports = Video = mongoose.model('video', VideoSchema);
