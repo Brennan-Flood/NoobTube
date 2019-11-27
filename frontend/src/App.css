@@ -251,6 +251,11 @@ html {
   margin-top: 40px;
 }
 
+.search-thumbnail {
+  height: 100%;
+  width: 100%
+}
+
 /* SEARCH INDEX ITEM */
 
 .search-index-item {

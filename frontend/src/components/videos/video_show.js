@@ -38,13 +38,21 @@ export default class VideoShow extends React.Component {
         <ul className="suggested-videos">
           <h1 className="suggested-video-header">Up Next</h1>
           {Object.values(this.props.videos).map((video) => {
-            return(
-              
+            let thumbnailUrl = "https://img.youtube.com/vi/";
+            let splitUrl = video.link.split("=");
+            if (splitUrl.length === 1) {
+              thumbnailUrl = "stock_thumbnail.jpg";
+            } else {
+              thumbnailUrl = thumbnailUrl.concat(splitUrl.slice(1)).concat("/0.jpg");
+            }
+           
+            return(  
                 <li className="suggested-video">
                   <Link to={`/video/${video._id}`}>
                     <h1 className="suggested-video-title">{video.title}</h1>
                   </Link>
                   <h1 className="suggested-video-author">{video.author}</h1>
+                <img className="suggested-video-thumbnail" src={thumbnailUrl} alt="stock_thumbnail.jpg"/>
                 </li>
               
             )
