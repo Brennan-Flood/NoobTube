@@ -1,5 +1,5 @@
 # NoobTube
-Background and Overview. 
+## Background and Overview. 
 Welcome to NoobTube, a YouTube clone with a twist. Powered by the Mern stack, this app provides users with an interactive user experience centered around enjoying quick-scope videos. 
 
 ## Functionality and MVP
