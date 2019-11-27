@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { fetchUserVideos } from '../../actions/video_actions';
+import { fetchUserVideos, destroyVideo } from '../../actions/video_actions';
 import Profile from './profile';
 
 
@@ -12,7 +12,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    fetchUserVideos: id => dispatch(fetchUserVideos(id))
+    fetchUserVideos: id => dispatch(fetchUserVideos(id)),
+    destroyVideo: id => dispatch(destroyVideo(id))
   };
 };
 

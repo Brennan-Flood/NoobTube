@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import AutoCompleteContainer from "../search/auto_complete_container";
 
 class NavBar extends React.Component {
   constructor(props) {
@@ -49,8 +50,8 @@ class NavBar extends React.Component {
     return (
       <div className="header-div">
         <div className="logo-div">
-          <h1 className="logo">NoobTube</h1>
-          <input className="searchbar" placeholder="Search"></input>
+          <Link to='/videos'><h1 className="logo">NoobTube</h1></Link>
+          <AutoCompleteContainer />
           <h1 className="current-user" >{this.getCurrentUser()}</h1>
           {this.getLinks()}
         </div>

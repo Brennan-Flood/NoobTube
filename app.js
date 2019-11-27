@@ -4,9 +4,9 @@ const db = require('./config/keys').mongoURI;
 const mongoose = require('mongoose')
 const users = require("./routes/api/users");
 const videos = require("./routes/api/videos")
+const comments = require('./routes/api/comments');
 const bodyParser = require('body-parser');
 const passport = require('passport');
-
 
 mongoose
   .connect(db, { useNewUrlParser: true })
@@ -18,6 +18,7 @@ app.use(passport.initialize());
 require('./config/passport')(passport);
 app.use("/api/users", users);
 app.use("/api/videos", videos);
+app.use("/api/comments", comments);
 
 const port = process.env.PORT || 5000;
 

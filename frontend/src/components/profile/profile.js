@@ -21,7 +21,7 @@ class Profile extends React.Component {
         <div>
           <h2>All of this User's Videos</h2>
           {this.props.videos.map((video, i) => (
-            <VideoIndexItem key={i} video={video}/>
+            <VideoIndexItem key={i} video={video} destroyVideo={this.props.destroyVideo}/>
           ))}
         </div>
       );

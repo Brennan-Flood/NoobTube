@@ -47,8 +47,9 @@ router.post('/',
       title: req.body.title, 
       duration: req.body.duration, 
       author: req.user.handle,
-      likes: 0,
-      dislikes: 0
+      date: req.body.date 
+      // likes: 0,
+      // dislikes: 0
     });
 
     newVideo.save().then(video => res.json(video));

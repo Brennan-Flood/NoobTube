@@ -16,6 +16,10 @@ export const getVideo = (id) => {
   return axios.get(`/api/videos/${id}`)
 };
 
+export const deleteVideo = id => {
+  return axios.delete(`/api/videos/${id}`)
+}
+
 
 // import axios from 'axios';
 

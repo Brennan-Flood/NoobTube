@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import videos from "./videos_reducer"
+import videos from "./videos_reducer";
+import comments from './comments_reducer';
 
 const entitiesReducer = combineReducers({
-  videos
+  videos,
+  comments
 })
 
 export default entitiesReducer;
