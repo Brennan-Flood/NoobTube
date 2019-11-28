@@ -14,13 +14,15 @@ export default class VideoIndexItem extends React.Component {
     // https://youtu.be/sjjAWzZXCxk
     
     return (
-      <div>
+      <div className="video-index-item">
         <Link to={`/video/${this.props.video._id}`} ><div className="video-item">
-          <h2>{this.props.video.title}</h2>
+          <div className="video-title-div">
+            <h2 className="video-title">{this.props.video.title}</h2>
+          </div>
           <img className="index-thumbnail" src={thumbnailUrl} alt="stock_thumbnail.jpg"/>
           <p>{this.props.video.author}</p>
         </div></Link>
-        <button onClick={() => this.props.destroyVideo(this.props.video._id)}>Delete</button>
+        {/* <button onClick={() => this.props.destroyVideo(this.props.video._id)}>Delete</button> */}
       </div>
     )
   }

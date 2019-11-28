@@ -3,12 +3,12 @@ const Schema = mongoose.Schema;
 
 const LikeSchema = new Schema({
   userId: {
-    type: Schema.Types.ObjectId,
+    type: String,
     ref: 'users'
   },
 
   videoId: {
-    type: Schema.Types.ObjectId,
+    type: String,
     ref: 'videos'
   },
 

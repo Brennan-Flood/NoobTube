@@ -45,8 +45,9 @@ class VideoCreate extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="video-create-div"> 
         <form onSubmit={this.handleSubmit}>
+          <h1><p className="post-new-video">Post a New Video</p></h1>
           <div>
             <input type="text"
               value={this.state.title}

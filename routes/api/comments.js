@@ -9,7 +9,6 @@ const validateCommentInput = require('../../validation/comments');
 router.get('/video/:video_id', (req, res) => {
   Comment.find({ video: req.params.video_id})
     .then(comments => {
-      console.log(comments);
       res.json(comments);
     })
     .catch(err => 

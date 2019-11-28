@@ -28,9 +28,7 @@ class NavBar extends React.Component {
     if (this.props.loggedIn) {
       return (
         <div className="nav">
-          <img className="nav-image" src="/nav.png" alt=""/>
           <div className="nav-buttons">
-          <Link to={'/profile'}><button className="profile-button">Profile</button></Link>
           <button className="logout-button" onClick={this.logoutUser}>Logout</button>
           </div>
         </div>
@@ -52,7 +50,9 @@ class NavBar extends React.Component {
         <div className="logo-div">
           <Link to='/videos'><h1 className="logo">NoobTube</h1></Link>
           <AutoCompleteContainer />
+          <Link to={'/profile'}>
           <h1 className="current-user" >{this.getCurrentUser()}</h1>
+          </Link>
           {this.getLinks()}
         </div>
       </div>

@@ -1,17 +1,17 @@
 import axios from "axios";
 
-export const createLike = videoId => {
-  return axios.post(`/api/likes/video/${videoId}`, videoId)
+export const createLike = (like) => {
+  return axios.post(`/api/likes/create/${like.videoId}`, like)
 }
 
-export const deleteLike = id => {
-  return axios.delete(`/api/likes/${id}`)
+export const deleteLike = (videoId, userId) => {
+  return axios.delete(`/api/likes/delete/${videoId}`)
 }
 
 export const fetchLikes = videoId => {
-  return axios.get(`/api/likes/video/${videoId}`)
+  return axios.get(`/api/likes/get/${videoId}`)
 }
 
-export const updateLikes = videoId => {
-  return axios.patch(`/api/likes/video/${videoId}`)
+export const updateLikes = (like) => {
+  return axios.patch(`/api/likes/${like.videoId}`, like)
 }

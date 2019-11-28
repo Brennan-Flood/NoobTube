@@ -7,24 +7,23 @@ const Like = require('../../models/Like');
 const validateLikeInput = require('../../validation/likes');
 
 
-router.post('/:video_id', (req, res) => {
-  passport.authenticate('jwt', { session: false })  ,
+router.post('/create/:video_id',
+  passport.authenticate('jwt', { session: false }),
   (req, res) => {
-    const { errors, isValid } = validateLikeInput();
+    // const { errors, isValid } = validateLikeInput();
 
-    if(!isValid) {
-      return res.status(400).json(errors);
-    }
-
+    // if(!isValid) {
+    //   return res.status(400).json(errors);
+    // }
     const newLike = new Like({
-      userId: req.userId,
-      videoId: req.videoId,
-      liked: req.liked
+      userId: req.body.userId,
+      videoId: req.body.videoId,
+      liked: req.body.liked
     });
 
     newLike.save().then(like => res.json(like))
   }
-})
+)
 
 router.patch('/:video_id', (req, res) => {
   passport.authenticate('jwt', { session: false }),
@@ -36,13 +35,13 @@ router.patch('/:video_id', (req, res) => {
   }
 })
 
-router.get('/:video_id', (req, res) => {
+router.get('/get/:video_id', (req, res) => {
   Like.find({videoId: req.params.video_id})
     .then(likes => res.json(likes))
     .catch(err => res.status(404).json({ nolikesfound: 'No likes found' }));
 })
 
-router.delete('/:video_id', (req, res) => {
+router.delete('/delete/:video_id', (req, res) => {
   Like.find({userId: req.userId, videoId: req.params.video_id})
     .remove();
 })
