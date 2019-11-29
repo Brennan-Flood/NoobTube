@@ -417,3 +417,67 @@ body {
 	-webkit-transition: text-shadow 1s ease;
 	/* text-shadow: 0 0 1px rgba(0,0,0,.1); */
 }
+
+.auth-modal {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.auth-form {
+  padding: 30px;
+  background-image: url('https://www.publicdomainpictures.net/pictures/90000/velka/red-black-seamless-tiger-stripes.jpg');
+  height: 220px;
+  width: 220px;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email-input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.password-input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.auth-submit {
+  margin: 10px;
+  padding: 5px;
+  width: 80px;
+  height: 25px;
+}
+
+.handle-input {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+
+}
+
+.auth-header {
+  padding: 0px;
+  font-size: 18px;
+}
+
+.signup-form {
+  padding: 30px;
+  background-image: url('https://www.publicdomainpictures.net/pictures/90000/velka/red-black-seamless-tiger-stripes.jpg');
+  height: 320px;
+  width: 220px;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

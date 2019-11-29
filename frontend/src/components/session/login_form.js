@@ -16,24 +16,20 @@ class LoginForm extends React.Component {
     this.renderErrors = this.renderErrors.bind(this);
   }
 
-  // Once the user has been authenticated, redirect to the Tweets page
   componentWillReceiveProps(nextProps) {
     if (nextProps.currentUser === true) {
       this.props.history.push('/videos');
     }
 
-    // Set or clear errors
     this.setState({ errors: nextProps.errors })
   }
 
-  // Handle field updates (called in the render method)
   update(field) {
     return e => this.setState({
       [field]: e.currentTarget.value
     });
   }
 
-  // Handle form submission
   handleSubmit(e) {
     e.preventDefault();
 
@@ -45,7 +41,6 @@ class LoginForm extends React.Component {
     this.props.login(user);
   }
 
-  // Render the session errors if there are any
   renderErrors() {
     return (
       <ul>
@@ -60,24 +55,22 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <input type="text"
+      <div className="auth-modal">
+        <form className="auth-form" onSubmit={this.handleSubmit}>
+            <h1 className="auth-header">Login</h1>
+
+            <input className="email-input" type="text"
               value={this.state.email}
               onChange={this.update('email')}
               placeholder="Email"
             />
-            <br />
-            <input type="password"
+            <input className="password-input" type="password"
               value={this.state.password}
               onChange={this.update('password')}
               placeholder="Password"
             />
-            <br />
-            <input type="submit" value="Submit" />
+            <input className="auth-submit" type="submit" value="Submit" />
             {this.renderErrors()}
-          </div>
         </form>
       </div>
     );

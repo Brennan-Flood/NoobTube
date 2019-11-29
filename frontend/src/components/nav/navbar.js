@@ -17,7 +17,7 @@ class NavBar extends React.Component {
   }
 
   getCurrentUser() {
-    if(this.props.user.handle) {
+    if ( this.props.user && this.props.user.handle ) {
     return this.props.user.handle.slice(0, 1).toUpperCase();
     } else {
       return <p></p>

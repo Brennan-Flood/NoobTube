@@ -4,13 +4,8 @@ import VideoIndexItem from '../videos/video_index_item';
 class Profile extends React.Component {
 
   componentDidMount() {
-    // console.log(this.props.currentUser.id)
     this.props.fetchUserVideos(this.props.currentUser.id);
   }
-
-  // componentWillReceiveProps(newState) {
-  //   this.setState({ videos: newState.videos });
-  // }
 
   render() {
     console.log(this.props)
