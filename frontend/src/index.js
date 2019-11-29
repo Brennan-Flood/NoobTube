@@ -6,6 +6,12 @@ import jwt_decode from 'jwt-decode';
 import { setAuthToken } from './util/session_api_util';
 import { logout } from './actions/session_actions';
 import { fetchComments } from "./util/comment_api_util";
+import UIfx from 'uifx';
+import Hitmarkers from './audio/hitmarker_2.mp3';
+
+const hitmarkers = new UIfx({asset: Hitmarkers})
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -25,7 +31,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   const root = document.getElementById('root');
   window.getState = store.getState;
-  window.fetchComments = fetchComments
+  window.fetchComments = fetchComments;
 
+  window.addEventListener('click', () => {
+    hitmarkers.play()
+  });
+  
   ReactDOM.render(<Root store={store} />, root);
 });
+
+

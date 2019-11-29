@@ -7,9 +7,7 @@ import LikesShowContainer from '../like/likes_show_container';
 export default class VideoShow extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = { voted: false }
-
+    this.state = { voted: false };
     this.deleteLike = this.deleteLike.bind(this);
     this.handleLike = this.handleLike.bind(this);
     this.handleDislike = this.handleDislike.bind(this);
@@ -37,12 +35,9 @@ export default class VideoShow extends React.Component {
       userId: this.props.user.id,
       videoId: this.props.videoId,
       liked: false
-    }
-    console.log(like);
+    };
     this.props.createLike(like);
     this.setState({voted: true})
-
-    // this.props.deleteLike(this.props.videoId, this.props.user.id)
   }
 
   deleteLike() {
@@ -50,21 +45,18 @@ export default class VideoShow extends React.Component {
   }
 
   render() {
-    console.log(this.props.videos)
     let buttons;
     if (!this.state.voted) {
       buttons = <div className="like-buttons">
         <button className="like-dislike" onClick={this.handleLike}><img className="thumbs-up" src="thumbsup.png" /></button>
         <button className="like-dislike" onClick={this.handleDislike}><img className="thumbs-down" src="thumbsdown.png"/></button>
         <LikesShowContainer />
-
       </div>
     } else {
       buttons = <div className="like-buttons">
         <button className="like-dislike" onClick={this.deleteLike}><img className="thumbs-up" src="thumbsup.png" /></button>
         <button className="like-dislike" onClick={this.deleteLike}><img className="thumbs-down" src="thumbsdown.png" /></button>
         <LikesShowContainer />
-
       </div>
     }
 
@@ -74,7 +66,6 @@ export default class VideoShow extends React.Component {
         <div className="video-show">
           <ReactPlayer
               className="video"
-            // poster="/assets/poster.png"
               url={this.props.videos[this.props.videoId].link}
               controls="true"
               volume="0.5"

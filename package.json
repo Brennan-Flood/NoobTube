@@ -22,7 +22,9 @@
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
     "react-addons-css-transition-group": "^15.6.2",
+    "react-cursor-position": "^3.0.3",
     "react-player": "^1.14.2",
+    "uifx": "^2.0.3",
     "validator": "^12.1.0",
     "video-react": "^0.14.1"
   },

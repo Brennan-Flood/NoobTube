@@ -1,4 +1,6 @@
 import React from 'react';
+import UIfx from 'uifx';
+import Hitmarkers from '../../audio/hitmarker_2.mp3';
 
 class LikesShow extends React.Component {
   constructor(props) {
