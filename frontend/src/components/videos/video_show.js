@@ -62,7 +62,7 @@ export default class VideoShow extends React.Component {
 
     if (this.props.video) {
     return (
-      <div className="video">
+      <div className="video-div">
         <div className="video-show">
           <ReactPlayer
               className="video"
@@ -107,7 +107,7 @@ export default class VideoShow extends React.Component {
       </div>
     );
     } else {
-      return <div>this is not working</div>
+      return <div className="loading">this is not working</div>
     }
   }
 };

@@ -6,7 +6,8 @@ class LikesShow extends React.Component {
   constructor(props) {
     super(props);
     this.state = {videoId: null}
-    this.getCurrentVideoId = this.getCurrentVideoId.bind(this)
+    this.getCurrentVideoId = this.getCurrentVideoId.bind(this);
+    this.likeRatio = this.likeRatio.bind(this);
   }
 
   getCurrentVideoId() {
@@ -26,13 +27,21 @@ class LikesShow extends React.Component {
     }
   }
 
-  
+  likeRatio() {
+    return `${this.props.likes / (this.props.likes + this.props.dislikes) * 100}%`
+  }
   
   render() {
+    
     return (
-      <div className="likes-counter">
-      <p className="likes-count">{this.props.likes} Likes</p>
-      <p className="likes-count">{this.props.dislikes} Dislikes</p>
+      <div className="likes-container">
+        <div className = "like-ratio-bar" >
+          <div className="likes-bar" style={{ width: this.likeRatio() }}></div>
+        </div >
+        <div className="likes-counter">
+        <p className="likes-count">{this.props.likes} Likes</p>
+        <p className="dislikes-count">{this.props.dislikes} Dislikes</p>
+        </div>
       </div>
     )
   }

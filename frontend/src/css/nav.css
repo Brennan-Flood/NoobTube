@@ -1,0 +1,55 @@
+.logo-div {
+  background-image: url(https://images-na.ssl-images-amazon.com/images/I/81%2BMcjk1UkL._SX466_.jpg);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  right: 0vw;
+  top: 0vh;
+  padding: 0px;
+  margin: 0px;
+  opacity: 0.5;
+}
+
+.logo {
+  width: 220px;
+  height: 50px;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px rgb(0, 0, 0);
+  font-size: 40px;
+  font-family: 'Permanent Marker', cursive;
+  background-color: #fafafa8a;
+  border-radius: 10px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  box-shadow: 0px 0px 30px 30px #fafafa8a;
+  padding: 5px;
+}
+
+.searchbar {
+  height: 28px;
+  margin-top: 25px;
+}
+
+.header-div {
+  width: 100%;
+}
+
+.current-user {
+  font-size: 18px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 32, 118);
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 10px;
+}
+
+.nav-image {
+  width: 50px;
+  height: 50px;
+}

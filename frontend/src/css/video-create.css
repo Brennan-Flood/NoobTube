@@ -1,0 +1,29 @@
+.post-new-video {
+  font-weight: 300;
+  font-family: 'Permanent Marker', cursive;
+  height: 56px;
+	text-align: center;
+	-webkit-transition: text-shadow 1s ease;
+  text-shadow: 0 0 1px rgba(0,0,0,.1);
+   background-image: url(https://images-na.ssl-images-amazon.com/images/I/81%2BMcjk1UkL._SX466_.jpg);
+}
+
+.video-create-div {
+  margin: auto;
+  width: 50%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+}
+
+.video-create-div > form > div > input {
+  width: 80%;
+  margin: auto;
+  border: 1px solid red; 
+}
+
+.video-create-div > form > h1 {
+  width: 80%;
+  margin: auto;
+  color: white; 
+}

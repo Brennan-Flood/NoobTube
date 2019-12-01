@@ -1,0 +1,42 @@
+
+
+.App-link {
+  color: #09d3ac;
+}
+
+html {
+  width: 100%;
+  cursor:url(https://dokicupid-seeds.s3-us-west-1.amazonaws.com/crosshair-default.png) 16 16, auto;
+  background-color: rgb(46, 46, 46);
+  color: white;
+}
+
+input:hover {
+  cursor:url(https://dokicupid-seeds.s3-us-west-1.amazonaws.com/crosshair.png) 16 16, auto;
+}
+
+a:hover {
+  cursor:url(https://dokicupid-seeds.s3-us-west-1.amazonaws.com/crosshair.png) 16 16, auto;
+}
+
+button:hover {
+  cursor:url(https://dokicupid-seeds.s3-us-west-1.amazonaws.com/crosshair.png) 16 16, auto;
+}
+
+textarea:hover {
+  cursor:url(https://dokicupid-seeds.s3-us-west-1.amazonaws.com/crosshair.png) 16 16, auto;
+
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}
+
+a {
+  text-decoration: none; 
+  color: white;
+}
+
+body {
+}

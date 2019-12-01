@@ -1,0 +1,145 @@
+.video-div {
+  display: flex;
+}
+
+.video-show {
+  display: flex;
+  height: 100%;
+  width: 72%;
+  margin: 2%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.react-player {
+  width: 100%;
+  height: 100%;
+}
+
+.react-player:hover {
+  cursor:url(https://dokicupid-seeds.s3-us-west-1.amazonaws.com/crosshair.png), auto;
+}
+
+.video-show-title {
+  font-weight: 300;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.video-show-header {
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.suggested-videos {
+  width: 300px;
+  padding: 5px;
+  overflow-y: scroll;
+  height: 2000px;
+  position: absolute;
+  right: 0px;
+  border-left: 1px solid lightgray;
+  margin-top: 0px;
+
+}
+
+@media only screen and (max-width: 968px) {
+  .suggested-videos{
+    display: none;
+  }
+}
+
+.suggested-video {
+  list-style: none;
+  padding: 15px;
+  border-top: 1px solid gray;
+}
+
+.suggested-video-title {
+  font-size: 16px;
+}
+
+.suggested-video-author {
+  font-size: 14px;
+}
+
+.suggested-video-thumbnail {
+  width: 180px;
+  height: 120px;
+}
+
+.video-show-author {
+  font-size: 14px;
+  padding: 10px;
+}
+
+.video-comments-header {
+  font-size: 16px;
+}
+
+
+.thumbs-up {
+  height: 20px;
+  width: 20px;
+}
+
+.thumbs-down {
+  height: 20px;
+  width: 20px;
+}
+
+.like-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 30px;
+}
+
+.like-dislike {
+  margin: 4px;
+}
+
+.likes-counter {
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+}
+
+.likes-count {
+  margin: 4px;
+  color: rgb(1, 189, 1);
+}
+
+.dislikes-count {
+  margin: 4px;
+  color: red;
+}
+
+.video {
+  height: 800px;
+  width: 900px;
+
+}
+
+.video:hover {
+
+}
+
+.like-ratio-bar {
+  width: 130px;
+  height: 6px;
+  background-color: red;
+}
+
+.likes-bar {
+  height: 6px;
+  background-color: rgb(1, 189, 1);
+  width: 50%;
+}
+
+.likes-container {
+  margin-top: 10px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}

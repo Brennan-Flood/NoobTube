@@ -35,16 +35,19 @@ class CreateComment extends React.Component {
 
   render() {
     return (
-      <div> 
-        <form onSubmit={this.handleSubmit}>
-          <div> 
+      <div className="comment-create-section" > 
+        <form className="comment-create-form" onSubmit={this.handleSubmit}>
             <textarea
+              className="comment-text-area"
               value={this.state.text}
               onChange={this.update()}
               placeholder="Comment..."
             />
-            <input type="submit" value="Comment" />
-          </div>
+            <input
+            className="comment-submit"
+            type="submit" 
+            value="Comment" 
+            />
         </form>
       </div>
     )
