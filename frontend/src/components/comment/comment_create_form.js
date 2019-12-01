@@ -18,11 +18,9 @@ class CreateComment extends React.Component {
     let comment = {
       text: this.state.text,
       user: this.props.currentUser.id,
-      video: this.props.videoId
+      video: this.props.videoId,
+      handle: this.props.currentUser.handle,
     };
-
-    // debugger; 
-
     this.props.createComment(comment);
     this.setState({text: ''})
   }
@@ -41,7 +39,7 @@ class CreateComment extends React.Component {
               className="comment-text-area"
               value={this.state.text}
               onChange={this.update()}
-              placeholder="Comment..."
+              placeholder={`Commenting as ${this.props.currentUser.handle}`}
             />
             <input
             className="comment-submit"

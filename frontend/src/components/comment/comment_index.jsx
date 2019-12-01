@@ -29,7 +29,8 @@ export default class CommentIndex extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="comments-container">
+      <h1 className="video-comments-header">{Object.values(this.props.comments).length} Comments</h1>
         <CreateCommentContainer videoId={this.props.videoId} />
         <ul>
         {Object.values(this.props.comments).map((comment, i) => {

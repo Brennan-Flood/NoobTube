@@ -93,10 +93,33 @@
   flex-direction: row;
   align-items: center;
   height: 30px;
+  padding: 5px;
 }
 
-.like-dislike {
+.dislike {
+  position: relative;
   margin: 4px;
+  background: none;
+  border: none;
+  transition: 0.3s;
+  top: 3px;
+}
+
+.like {
+  position: relative;
+  margin: 4px;
+  background: none;
+  border: none;
+  transition: 0.2s;
+  bottom: 1px;
+}
+
+.dislike:hover {
+  top: 5px;
+}
+
+.like:hover {
+  bottom: 3px;
 }
 
 .likes-counter {
@@ -107,7 +130,7 @@
 
 .likes-count {
   margin: 4px;
-  color: rgb(1, 189, 1);
+  color: rgb(27, 230, 27);
 }
 
 .dislikes-count {
@@ -118,23 +141,23 @@
 .video {
   height: 800px;
   width: 900px;
-
 }
 
 .video:hover {
-
+  cursor:url(https://dokicupid-seeds.s3-us-west-1.amazonaws.com/crosshair.png) 16 16, auto;
 }
 
 .like-ratio-bar {
   width: 130px;
-  height: 6px;
-  background-color: red;
+  height: 4px;
+  background-color: rgb(204, 35, 35);
+  border-radius: 5px;
 }
 
 .likes-bar {
-  height: 6px;
-  background-color: rgb(1, 189, 1);
-  width: 50%;
+  height: 4px;
+  background-color: rgb(22, 223, 22);
+  border-radius: 5px;  
 }
 
 .likes-container {
@@ -142,4 +165,11 @@
   padding: 5px;
   display: flex;
   flex-direction: column;
+}
+
+i {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: red;
 }

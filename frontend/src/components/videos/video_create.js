@@ -17,10 +17,6 @@ class VideoCreate extends React.Component {
     this.update = this.update.bind(this);
   }
 
-  // componentWillReceiveProps(nextProps) {
-  //   this.setState({newVideo: nextProps.newVideo.link});
-  // }
-
   handleSubmit(e) {
     e.preventDefault();
     let video = {

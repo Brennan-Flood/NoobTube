@@ -29,7 +29,8 @@ router.post('/',
       text: req.body.text, 
       user: req.user,
       video: req.body.video,
-      date: req.body.date
+      date: req.body.date,
+      handle: req.body.handle
     });
 
     newComment.save().then(comment => res.json(comment));

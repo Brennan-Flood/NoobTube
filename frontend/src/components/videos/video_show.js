@@ -48,14 +48,16 @@ export default class VideoShow extends React.Component {
     let buttons;
     if (!this.state.voted) {
       buttons = <div className="like-buttons">
-        <button className="like-dislike" onClick={this.handleLike}><img className="thumbs-up" src="thumbsup.png" /></button>
-        <button className="like-dislike" onClick={this.handleDislike}><img className="thumbs-down" src="thumbsdown.png"/></button>
+        <button className="like" onClick={this.handleLike}><img className="thumbs-up" src="thumbsup.png" /></button>
+        {/* <i className="fas fa-thumbs-up"></i> */}
+        <button className="dislike" onClick={this.handleDislike}><img className="thumbs-down" src="thumbsdown.png"/></button>
+        {/* <i className="fas fa-thumbs-down"></i> */}
         <LikesShowContainer />
       </div>
     } else {
       buttons = <div className="like-buttons">
-        <button className="like-dislike" onClick={this.deleteLike}><img className="thumbs-up" src="thumbsup.png" /></button>
-        <button className="like-dislike" onClick={this.deleteLike}><img className="thumbs-down" src="thumbsdown.png" /></button>
+        <button className="like" onClick={this.deleteLike}><i class="fas fa-thumbs-up"></i></button>
+        <button className="dislike" onClick={this.deleteLike}><img className="thumbs-down" src="thumbsdown.png" /></button>
         <LikesShowContainer />
       </div>
     }
@@ -77,7 +79,6 @@ export default class VideoShow extends React.Component {
           </div>
 
           <div className="video-comments">
-            <h1 className="video-comments-header">Comments</h1>
             <CommentIndexContainer videoId={this.props.videoId}/>
           </div>
         </div>
