@@ -1,11 +1,9 @@
 import React from 'react';
-import UIfx from 'uifx';
-import Hitmarkers from '../../audio/hitmarker_2.mp3';
 
 class LikesShow extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {videoId: null}
+    this.state = {videoId: this.props.videoId}
     this.getCurrentVideoId = this.getCurrentVideoId.bind(this);
     this.likeRatio = this.likeRatio.bind(this);
   }
@@ -20,7 +18,6 @@ class LikesShow extends React.Component {
   }
 
   componentDidUpdate() {
-
     if (this.state.videoId !== this.getCurrentVideoId()) {
       this.props.fetchLikes(this.getCurrentVideoId());
       this.setState({videoId: this.getCurrentVideoId()});

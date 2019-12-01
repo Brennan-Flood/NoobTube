@@ -49,16 +49,14 @@ export default class VideoShow extends React.Component {
     if (!this.state.voted) {
       buttons = <div className="like-buttons">
         <button className="like" onClick={this.handleLike}><img className="thumbs-up" src="thumbsup.png" /></button>
-        {/* <i className="fas fa-thumbs-up"></i> */}
         <button className="dislike" onClick={this.handleDislike}><img className="thumbs-down" src="thumbsdown.png"/></button>
-        {/* <i className="fas fa-thumbs-down"></i> */}
-        <LikesShowContainer />
+        <LikesShowContainer videoId={this.props.videoId}/>
       </div>
     } else {
       buttons = <div className="like-buttons">
-        <button className="like" onClick={this.deleteLike}><i class="fas fa-thumbs-up"></i></button>
+        <button className="like" onClick={this.deleteLike}><img className="thumbs-up" src="thumbsup.png" /></button>
         <button className="dislike" onClick={this.deleteLike}><img className="thumbs-down" src="thumbsdown.png" /></button>
-        <LikesShowContainer />
+        <LikesShowContainer videoId={this.props.videoId}/>
       </div>
     }
 

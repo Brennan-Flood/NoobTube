@@ -20,7 +20,7 @@ export default class VideoIndexItem extends React.Component {
             <h2 className="video-title">{this.props.video.title}</h2>
           </div>
           <img className="index-thumbnail" src={thumbnailUrl} alt="stock_thumbnail.jpg"/>
-          <p>{this.props.video.author}</p>
+          <p className="video-index-item-author">{this.props.video.author}</p>
         </div></Link>
         {/* <button onClick={() => this.props.destroyVideo(this.props.video._id)}>Delete</button> */}
       </div>

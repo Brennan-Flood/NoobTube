@@ -1,32 +1,24 @@
 .video-index-item {
-  width: 500px;
-  background-color: white;
-  height: 515px;
+  width: 450px;
+  background-color: rgb(85, 85, 85);
+  height: 415px;
   margin-bottom: 20px;
   margin-left: 5px;
   margin-right: 5px;
   border-radius: 4px;
   text-align: center;
-  
 }
 
 .video-index-item:hover {
-  background-color: red;
-}
-
-
-.video-title-div {
-  background: url(https://images-na.ssl-images-amazon.com/images/I/81%2BMcjk1UkL._SX466_.jpg);
-  background-size: cover;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  z-index: 4;
+  background-color: rgba(173, 173, 173, 0.507);
 }
 
 .video-title {
   -webkit-text-stroke: 1px black;
   font-weight: 700;
-  height: 70px;
+  height: 50px;
+  padding: 10px;
+  font-size: 22px;
 	text-align: center;
 	-webkit-transition: text-shadow 1s ease;
 }
@@ -39,5 +31,15 @@
 }
 
 .index-thumbnail {
-  border: 1px solid red; 
+  border: 1px solid rgba(255, 0, 0, 0.452);
+  width: 380px;
+  height: 260px;
+}
+
+.video-index-item-author {
+  padding: 20px;
+}
+
+.profile-header {
+  padding: 10px;
 }

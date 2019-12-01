@@ -49,18 +49,33 @@
   }
 }
 
+.suggested-video-header {
+  padding: 5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
 .suggested-video {
+  position: relative;
   list-style: none;
   padding: 15px;
   border-top: 1px solid gray;
+  width: 100%;
+  right: 4px;
+}
+
+.suggested-video:hover {
+  background-color: red;
 }
 
 .suggested-video-title {
   font-size: 16px;
+  padding-bottom: 10px;
 }
 
 .suggested-video-author {
   font-size: 14px;
+  padding-bottom: 10px;
 }
 
 .suggested-video-thumbnail {
@@ -150,7 +165,7 @@
 .like-ratio-bar {
   width: 130px;
   height: 4px;
-  background-color: rgb(204, 35, 35);
+  background-color: rgb(211, 35, 35);
   border-radius: 5px;
 }
 

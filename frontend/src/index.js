@@ -6,10 +6,7 @@ import jwt_decode from 'jwt-decode';
 import { setAuthToken } from './util/session_api_util';
 import { logout } from './actions/session_actions';
 import { fetchComments } from "./util/comment_api_util";
-import UIfx from 'uifx';
-import Hitmarkers from './audio/hitmarker_2.mp3';
 
-const hitmarkers = new UIfx({asset: Hitmarkers})
 
 
 
@@ -22,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloadedState = { session: { isAuthenticated: true, user: decodedUser } };
     store = configureStore(preloadedState);
     const currentTime = Date.now() / 1000;
-    if (decodedUser.exp < currentTime) {
-      store.dispatch(logout());
-      window.location.href = '/login';
-    }
+    // if (decodedUser.exp < currentTime) {
+    //   store.dispatch(logout());
+    //   window.location.href = '/login';
+    // }
   } else {
     store = configureStore({});
   }
@@ -33,9 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.getState = store.getState;
   window.fetchComments = fetchComments;
 
-  window.addEventListener('click', () => {
-    hitmarkers.play()
-  });
+ 
   
   ReactDOM.render(<Root store={store} />, root);
 });

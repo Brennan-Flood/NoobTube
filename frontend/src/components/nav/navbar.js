@@ -9,6 +9,7 @@ class NavBar extends React.Component {
     this.logoutUser = this.logoutUser.bind(this);
     this.getLinks = this.getLinks.bind(this);
     this.getCurrentUser = this.getCurrentUser.bind(this);
+    this.userIconColor = this.userIconColor.bind(this);
   }
 
   logoutUser(e) {
@@ -21,6 +22,22 @@ class NavBar extends React.Component {
     return this.props.user.handle.slice(0, 1).toUpperCase();
     } else {
       return <p></p>
+    }
+  }
+
+  userIconColor() {
+    if ('abc'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
+      return 'rgb(41, 179, 179)';
+    } else if ('defg'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
+      return 'yellow';
+    } else if ('hijk'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
+      return 'rgb(221, 55, 77)';
+    } else if ('lmnop'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
+      return 'rgb(199, 103, 58)'
+    } else if ('qrstu'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
+      return 'rgb(20, 230, 125)';
+    } else if ('vwxyz'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
+      return 'rgb(141, 24, 196)';
     }
   }
 
@@ -44,14 +61,13 @@ class NavBar extends React.Component {
   }
 
   render() {
-    console.log(this.props.state)
     return (
       <div className="header-div">
         <div className="logo-div">
           <Link to='/videos'><h1 className="logo">NoobTube</h1></Link>
           <AutoCompleteContainer />
           <Link to={'/profile'}>
-          <h1 className="current-user" >{this.getCurrentUser()}</h1>
+          <h1 className="comment-icon" style={{background: this.userIconColor()}} >{this.getCurrentUser()}</h1>
           </Link>
           {this.getLinks()}
         </div>
