@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloadedState = { session: { isAuthenticated: true, user: decodedUser } };
     store = configureStore(preloadedState);
     const currentTime = Date.now() / 1000;
-    // if (decodedUser.exp < currentTime) {
-    //   store.dispatch(logout());
-    //   window.location.href = '/login';
-    // }
+    if (decodedUser.exp < currentTime) {
+      store.dispatch(logout());
+      window.location.href = '/login';
+    }
   } else {
     store = configureStore({});
   }
