@@ -12,12 +12,13 @@ export default class VideoIndexItem extends React.Component {
       thumbnailUrl = thumbnailUrl.concat(splitUrl.slice(1)).concat("/0.jpg");
     }
     // https://youtu.be/sjjAWzZXCxk
-    
+    let title;
+    this.props.video.title.length > 45 ? title = this.props.video.title.slice(0, 45) + '...' : title = this.props.video.title
     return (
       <div className="video-index-item">
         <Link to={`/video/${this.props.video._id}`} ><div className="video-item">
           <div className="video-title-div">
-            <h2 className="video-title">{this.props.video.title}</h2>
+            <h2 className="video-title">{title}</h2>
           </div>
           <img className="index-thumbnail" src={thumbnailUrl} alt="stock_thumbnail.jpg"/>
           <p className="video-index-item-author">{this.props.video.author}</p>

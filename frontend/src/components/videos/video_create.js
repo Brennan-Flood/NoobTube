@@ -27,10 +27,11 @@ class VideoCreate extends React.Component {
       user: this.state.user 
     };
 
-    this.props.createVideo(video);
-    this.setState({ link: ''})
-    this.setState({ title: ''})
-    this.setState({ duration: ''})
+    this.props.createVideo(video)
+    .then(() => this.props.history.push(`/videos`))
+    this.setState({ link: ''});
+    this.setState({ title: ''});
+    this.setState({ duration: ''});
   }
 
   update(field) {
@@ -42,29 +43,37 @@ class VideoCreate extends React.Component {
   render() {
     return (
       <div className="video-create-div"> 
-        <form onSubmit={this.handleSubmit}>
-          <h1><p className="post-new-video">Post a New Video</p></h1>
-          <div>
-            <input type="text"
+        <form className="video-create-form" onSubmit={this.handleSubmit}>
+          <p className="post-new-video">Post a New Video</p>
+          
+            <input 
+              className="video-input"
+              type="text"
               value={this.state.title}
               onChange={this.update("title")}
               placeholder="Video Title..."
             />
-            <input type="text"
+            <input 
+              className="video-input"
+              type="text"
               value={this.state.link}
               onChange={this.update("link")}
               placeholder="Video Link..."
             />
-            <input type="text"
+            <input 
+              className="video-input"
+              type="text"
               value={this.state.duration}
               onChange={this.update("duration")}
               placeholder="Video duration..."
             />
-            <input type="submit" value="Post Video" />
-          </div>
+            <input 
+            type="submit" 
+            value="Post Video" 
+            className="video-input"
+            />
         </form>
         <br />
-        {/* <VideoIndexItem video={this.state.newVideo} /> */}
       </div>
     )
   }

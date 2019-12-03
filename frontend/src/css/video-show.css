@@ -188,3 +188,11 @@ i {
   font-size: 20px;
   color: red;
 }
+
+.loading {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 40px;
+  position: fixed;
+  left: 30px;
+  top: 300px;
+}

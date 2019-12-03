@@ -10,11 +10,19 @@ class NavBar extends React.Component {
     this.getLinks = this.getLinks.bind(this);
     this.getCurrentUser = this.getCurrentUser.bind(this);
     this.userIconColor = this.userIconColor.bind(this);
+    this.demoLogin = this.demoLogin.bind(this);
   }
 
   logoutUser(e) {
     e.preventDefault();
     this.props.logout();
+    this.setState({nav: false})
+  }
+
+  demoLogin(e) {
+    e.preventDefault();
+    let demoUser = {email: 'guest@guest.com', password: 'password'};
+    this.props.login(demoUser);
   }
 
   getCurrentUser() {
@@ -29,7 +37,7 @@ class NavBar extends React.Component {
     if ('abc'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
       return 'rgb(41, 179, 179)';
     } else if ('defg'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
-      return 'yellow';
+      return 'rgb(216, 205, 44)';
     } else if ('hijk'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
       return 'rgb(221, 55, 77)';
     } else if ('lmnop'.includes(this.props.user.handle.slice(0, 1).toLowerCase())) {
@@ -53,8 +61,9 @@ class NavBar extends React.Component {
     } else {
       return (
         <div className="login-div">
-          <Link to={'/signup'}><button className="signup">Signup</button></Link>
+          <Link to={'/signup'}><button className="signup">Create an Account</button></Link>
           <Link to={'/login'}><button className="login">Login</button></Link>
+          <button className="demo-login" onClick={this.demoLogin}>Login as Demo User</button>
         </div>
       );
     }
@@ -67,7 +76,7 @@ class NavBar extends React.Component {
           <Link to='/videos'><h1 className="logo">NoobTube</h1></Link>
           <AutoCompleteContainer />
           <Link to={'/profile'}>
-          { this.props.user.handle ? <h1 className="comment-icon" style={{background: this.userIconColor()}} >{this.getCurrentUser()}</h1> : <div></div>}
+          { this.props.loggedIn ? <h1 className="comment-icon" style={{background: this.userIconColor()}} >{this.getCurrentUser()}</h1> : <div></div>}
           </Link>
           {this.getLinks()}
         </div>

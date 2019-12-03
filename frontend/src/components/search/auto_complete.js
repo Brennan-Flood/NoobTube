@@ -8,8 +8,6 @@ export default class AutoComplete extends React.Component {
     this.state = {
       inputVal: ''
     };
-
-    // this.selectTitle = this.selectTitle.bind(this);
     this.handleInput = this.handleInput.bind(this);
   }
 
@@ -22,7 +20,7 @@ export default class AutoComplete extends React.Component {
   }
 
   matches() {
-    const matches = [];
+    let matches = [];
     if (this.state.inputVal.length === 0) {
       return this.props.videos;
     }
@@ -47,11 +45,15 @@ export default class AutoComplete extends React.Component {
   // }
 
   render() {
+
     const results = this.matches().map((result, i) => {
+        if (result !== 'No matches') {
       return (
         // <li key={i} onClick={this.selectTitle}>{result}</li>
         <ACIndexItem key={i} video={result}/>
-      );
+      )} else {
+        return <div>No Matches</div>
+      }
     });
 
     return (
@@ -66,8 +68,8 @@ export default class AutoComplete extends React.Component {
           <ul className="search-results">
             <ReactCSSTransitionGroup 
               transitionName="auto"
-              transitionEnterTimeout={500}
-              transitionLeaveTimeout={500}>
+              transitionEnterTimeout={100}
+              transitionLeaveTimeout={100}>
                 {results}
             </ReactCSSTransitionGroup>
           </ul>

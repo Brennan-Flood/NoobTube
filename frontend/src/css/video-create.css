@@ -1,11 +1,13 @@
 .post-new-video {
+  font-size: 30px;
   font-weight: 300;
   font-family: 'Permanent Marker', cursive;
   height: 56px;
+  width: 100%;
 	text-align: center;
 	-webkit-transition: text-shadow 1s ease;
   text-shadow: 0 0 1px rgba(0,0,0,.1);
-   background-image: url(https://images-na.ssl-images-amazon.com/images/I/81%2BMcjk1UkL._SX466_.jpg);
+  margin-bottom: 12px;
 }
 
 .video-create-div {
@@ -13,17 +15,42 @@
   width: 50%;
   height: 400px;
   display: flex;
-  flex-direction: row;
+  /* flex-direction: column; */
 }
 
-.video-create-div > form > div > input {
-  width: 80%;
-  margin: auto;
-  border: 1px solid red; 
-}
 
 .video-create-div > form > h1 {
   width: 80%;
   margin: auto;
   color: white; 
+}
+
+
+.video-create-form {
+  padding: 30px;
+  background-image: url('https://www.publicdomainpictures.net/pictures/90000/velka/red-black-seamless-tiger-stripes.jpg');
+  height: 320px;
+  width: 220px;
+  margin: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.video-input {
+  height: 24px;
+  width: 240px;
+  margin: 15px;
+  border-radius: 3px;
+}
+
+.add-video-button {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  margin: 10px;
 }

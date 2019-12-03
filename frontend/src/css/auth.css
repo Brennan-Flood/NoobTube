@@ -67,6 +67,8 @@
   height: 50px;
   color: white;
   background: black;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 .signup {
@@ -74,11 +76,23 @@
   height: 50px;
   color: white;
   background: black;
-  margin-right: 5px;
+  border-radius: 5px;
+  margin: 10px;
 }
 
 .login-div {
-  position: fixed;
-  right: 5px;
-  top: 6px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 5px;
+  top: 100px;
+}
+
+.demo-login {
+  width: 100px;
+  height: 50px;
+  color: white;
+  background: black;
+  border-radius: 5px;
+  margin: 10px;
 }

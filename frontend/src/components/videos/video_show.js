@@ -13,6 +13,10 @@ export default class VideoShow extends React.Component {
     this.handleDislike = this.handleDislike.bind(this);
   }
 
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
+
   componentDidUpdate() {
     if (this.props.videos[this.props.videoId] === undefined) {
       this.props.fetchVideos();
@@ -106,7 +110,7 @@ export default class VideoShow extends React.Component {
       </div>
     );
     } else {
-      return <div className="loading">this is not working</div>
+      return <div className="loading">LOADING...</div>
     }
   }
 };

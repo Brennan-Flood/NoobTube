@@ -20,7 +20,9 @@
   padding: 10px;
   font-size: 22px;
 	text-align: center;
-	-webkit-transition: text-shadow 1s ease;
+  -webkit-transition: text-shadow 1s ease;
+  max-height: 70px;
+  overflow-y: hidden;
 }
 
 .videos-ul {

@@ -82,7 +82,7 @@
 
 .search-thumbnail {
   height: 100%;
-  width: 100%
+  width: 150px;
 }
 
 .search-index-item {
@@ -108,9 +108,19 @@
 
 .search-result-item {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .search-thumbnail-div {
   width: 60px;
   height: 90px;
+}
+
+.video-search-title {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.video-search-author {
+  margin-top: 15px;
 }
