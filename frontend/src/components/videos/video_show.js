@@ -11,6 +11,7 @@ export default class VideoShow extends React.Component {
     this.deleteLike = this.deleteLike.bind(this);
     this.handleLike = this.handleLike.bind(this);
     this.handleDislike = this.handleDislike.bind(this);
+    this.getCurrentVideoId = this.getCurrentVideoId.bind(this);
   }
 
   componentDidMount() {
@@ -20,7 +21,16 @@ export default class VideoShow extends React.Component {
   componentDidUpdate() {
     if (this.props.videos[this.props.videoId] === undefined) {
       this.props.fetchVideos();
+      window.scrollTo(0, 0)
+    } else if ( this.state.videoId !== this.getCurrentVideoId()) {
+      this.setState({videoId: this.getCurrentVideoId()});
+      window.scrollTo(0, 0)
     }
+  }
+
+  getCurrentVideoId() {
+    let urlArr = window.location.href.split('/');
+    return urlArr[urlArr.length - 1];
   }
 
   handleLike() {
