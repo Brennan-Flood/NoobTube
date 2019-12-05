@@ -10,11 +10,6 @@ const validateLikeInput = require('../../validation/likes');
 router.post('/create/:video_id',
   passport.authenticate('jwt', { session: false }),
   (req, res) => {
-    // const { errors, isValid } = validateLikeInput();
-
-    // if(!isValid) {
-    //   return res.status(400).json(errors);
-    // }
     const newLike = new Like({
       userId: req.body.userId,
       videoId: req.body.videoId,
