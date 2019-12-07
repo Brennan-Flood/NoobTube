@@ -51,9 +51,15 @@ a {
 }
 ​
 html,body {
-    height:100%;
+	height:100%;
+	width: 100vw;
+	overflow-x: hidden;
 }
 ​
 button {
 	cursor: pointer;
+}
+root {
+	width: 100%;
+	overflow-x: hidden;
 }

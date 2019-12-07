@@ -75,10 +75,13 @@ class NavBar extends React.Component {
         <div className="logo-div">
           <Link to='/videos'><h1 className="logo">NoobTube</h1></Link>
           <AutoCompleteContainer />
-          <Link to={'/profile'}>
-          { this.props.loggedIn ? <h1 className="comment-icon" style={{background: this.userIconColor()}} >{this.getCurrentUser()}</h1> : <div></div>}
-          </Link>
-          {this.getLinks()}
+
+          <div className="navbar-right">
+            <Link to={'/profile'}>
+            { this.props.loggedIn ? <h1 className="comment-icon" style={{background: this.userIconColor()}} >{this.getCurrentUser()}</h1> : <div></div>}
+            </Link>
+            {this.getLinks()}
+          </div>
         </div>
       </div>
     );
