@@ -33,12 +33,12 @@
 
 .suggested-videos {
   width: 300px;
-  padding: 5px;
+  /* padding: 5px; */
   overflow-y: scroll;
   height: 2000px;
   position: absolute;
   right: 0px;
-  border-left: 1px solid lightgray;
+  border-left: 1px solid rgb(67, 67, 67);
   margin-top: 0px;
 
 }
@@ -52,20 +52,29 @@
 .suggested-video-header {
   padding: 5px;
   font-size: 22px;
+  height: 26px;
   font-weight: 600;
+  margin-left: 10px;
 }
 
 .suggested-video {
   position: relative;
   list-style: none;
-  padding: 15px;
-  border-top: 1px solid gray;
+  padding: 20px;
+  border-top: 1px solid rgb(67, 67, 67);
+  width: 280px;
+  height: max-content;
+  right: 10px;
+}
+
+.suggested-video > a {
+  /* padding: 20px; */
   width: 100%;
-  right: 4px;
+  height: 100%;
 }
 
 .suggested-video:hover {
-  background-color: red;
+  background-color: rgb(45, 45, 45);
 }
 
 .suggested-video-title {

@@ -4,8 +4,9 @@
   font-weight: bold;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   width: 318px;
-  height: 150px;
+  height: 300px;
   border: 2px solid black;
+  border-top: 1px solid black;
   margin: 0 20px 20px 20px;
   padding: 10px;
   background-color: rgb(65, 65, 65);
@@ -21,8 +22,14 @@
 }
 
 .auto > input{
-  margin: 10px 30px 0 30px;
-  border: 1px solid black;
+  /* margin: 10px 30px 0 30px;*/
+  border: 1px solid black; 
+  outline: none;
+}
+
+.auto>input:focus {
+  border: 1px solid rgb(193, 14, 14);
+  outline: 1px ridge rgb(193, 14, 14);
 }
 
 .auto li{
@@ -67,7 +74,7 @@
 .auto {
   visibility: hidden;
   z-index: 4;
-  margin-top: 15px;
+  margin-top: 19px;
 }
 
 .search-input {
@@ -75,9 +82,8 @@
   height: 25px;
   width: 340px;
   border-radius: 4px;
-  font-size: 17px;
+  font-size: 16px;
   text-align: center;
-  margin-top: 40px;
 }
 
 .search-thumbnail {

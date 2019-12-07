@@ -109,9 +109,10 @@ export default class VideoShow extends React.Component {
                 <li className="suggested-video">
                   <Link to={`/video/${video._id}`}>
                     <h1 className="suggested-video-title">{video.title}</h1>
-                  </Link>
+                  
                   <h1 className="suggested-video-author">{video.author}</h1>
-                <img className="suggested-video-thumbnail" src={thumbnailUrl} alt="stock_thumbnail.jpg"/>
+                  <img className="suggested-video-thumbnail" src={thumbnailUrl} alt="stock_thumbnail.jpg"/>
+                  </Link>
                 </li>
               
             )
