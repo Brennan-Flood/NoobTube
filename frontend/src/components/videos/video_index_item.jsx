@@ -14,6 +14,7 @@ export default class VideoIndexItem extends React.Component {
     // https://youtu.be/sjjAWzZXCxk
     let title;
     this.props.video.title.length > 45 ? title = this.props.video.title.slice(0, 45) + '...' : title = this.props.video.title
+    console.log(this.props.video.author);
     return (
       <div className="video-index-item">
         <Link to={`/video/${this.props.video._id}`} ><div className="video-item">

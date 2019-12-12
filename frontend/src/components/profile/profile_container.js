@@ -6,7 +6,7 @@ import Profile from './profile';
 const mapStateToProps = (state) => {
   return {
     videos: Object.values(state.entities.videos.user),
-    currentUser: state.session.user
+    profileUser: state.session.user
   };
 };
 

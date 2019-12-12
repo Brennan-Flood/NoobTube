@@ -75,6 +75,7 @@ export default class VideoShow extends React.Component {
     }
 
     if (this.props.video) {
+      console.log(this.props.videos[this.props.videoId].user);
     return (
       <div className="video-div">
         <div className="video-show">
@@ -87,7 +88,7 @@ export default class VideoShow extends React.Component {
           {buttons}
           <div className="video-show-header">
               <h1 className="video-show-title">{this.props.videos[this.props.videoId].title}</h1>
-              <h1 className="video-show-author">{this.props.videos[this.props.videoId].author}</h1>
+            <Link to={`/user/${this.props.videos[this.props.videoId].user}`}><h1 className="video-show-author">{this.props.videos[this.props.videoId].author}</h1></Link>
           </div>
 
           <div className="video-comments">
