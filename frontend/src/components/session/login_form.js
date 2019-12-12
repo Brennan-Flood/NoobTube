@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { withRouter } from 'react-router-dom';
+import { withRouter, Link } from 'react-router-dom';
 
 class LoginForm extends React.Component {
   constructor(props) {
@@ -69,7 +69,8 @@ class LoginForm extends React.Component {
               onChange={this.update('password')}
               placeholder="Password"
             />
-            <input className="auth-submit" type="submit" value="Submit" />
+            <input className="auth-submit" type="submit" value="Log in!" />
+            <Link to="/signup"><button className="create-account">Create an account!</button></Link>
             {this.renderErrors()}
         </form>
       </div>

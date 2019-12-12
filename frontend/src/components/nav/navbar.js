@@ -54,16 +54,17 @@ class NavBar extends React.Component {
       return (
         <div className="nav">
           <div className="nav-buttons">
-          <button className="logout-button" onClick={this.logoutUser}>Logout</button>
+            <button className="logout-button" onClick={this.logoutUser}>Logout</button>
+            <AutoCompleteContainer />
           </div>
         </div>
       );
     } else {
       return (
         <div className="login-div">
-          <Link to={'/signup'}><button className="signup">Create an Account</button></Link>
-          <Link to={'/login'}><button className="login">Login</button></Link>
-          <button className="demo-login" onClick={this.demoLogin}>Login as Demo User</button>
+          {/* <Link to={'/signup'}><button className="signup">Create an Account</button></Link>
+          <Link to={'/login'}><button className="login">Login</button></Link> */}
+          <button className="demo-login" onClick={this.demoLogin}>DEMO</button>
         </div>
       );
     }
@@ -74,7 +75,7 @@ class NavBar extends React.Component {
       <div className="header-div">
         <div className="logo-div">
           <Link to='/videos'><h1 className="logo">NoobTube</h1></Link>
-          <AutoCompleteContainer />
+          
 
           <div className="navbar-right">
             <Link to={'/profile'}>
