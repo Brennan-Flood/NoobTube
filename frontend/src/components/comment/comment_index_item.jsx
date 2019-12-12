@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 class CommentIndexItem extends React.Component {
   constructor(props){
@@ -24,7 +25,6 @@ class CommentIndexItem extends React.Component {
     let half;
     (hours > 12 ? half = 'PM' : half = 'AM');
     return `${month}/${day}/${year} at ${calcedHours}:${minutes}${minutesZero} ${half}`
-
   }
 
   userIconColor() {
@@ -50,7 +50,7 @@ class CommentIndexItem extends React.Component {
         <h1 className="comment-icon" style={{background: this.userIconColor()}}>{this.props.comment.handle.slice(0, 1).toUpperCase()}</h1>
         <div className="comment-content">
           <div className="comment-header">
-            <h1 className="comment-author">{this.props.comment.handle}</h1>
+            <Link to={`/user/${this.props.comment.user}`}> <h1 className="comment-author">{this.props.comment.handle}</h1></Link>
             <h1 className="comment-date">{this.getDate()}</h1>
           </div>
         <h1 className="comment-body">{this.props.comment.text}</h1>
