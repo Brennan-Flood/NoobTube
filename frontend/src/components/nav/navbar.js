@@ -16,7 +16,7 @@ class NavBar extends React.Component {
   logoutUser(e) {
     e.preventDefault();
     this.props.logout();
-    this.setState({nav: false})
+    this.setState({nav: false})  
   }
 
   demoLogin(e) {
