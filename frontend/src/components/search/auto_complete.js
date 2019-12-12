@@ -57,7 +57,7 @@ export default class AutoComplete extends React.Component {
     });
 
     return (
-      <div> 
+      <div className="whole-search"> 
         <div className="auto">
            <input 
            className="search-input"
