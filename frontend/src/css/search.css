@@ -1,5 +1,7 @@
 .search-results {
-  position: absolute;
+  position: relative;
+  top: 5px;
+  right: 30px;
   color: white;
   font-weight: bold;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -72,12 +74,18 @@
 }
 
 .auto {
+  position: fixed;
   visibility: hidden;
   z-index: 4;
-  margin-top: 19px;
+  top: 30px;
+  height: 400px;
+  width: 400px;
 }
 
 .search-input {
+  position: relative;
+  right: 45px;
+  top: 5px;
   visibility: visible;
   height: 25px;
   width: 340px;
@@ -129,4 +137,13 @@
 
 .video-search-author {
   margin-top: 15px;
+}
+
+.whole-search {
+  position: fixed;
+  top: 10px;
+  right: 700px;
+  width: 400px;
+  height: 400px;
+  text-align: center;
 }

@@ -1,65 +1,108 @@
-.auth-modal {
+/* .auth-modal {
   height: 100vh;
   width: 100vw;
   display: flex;
   justify-content: center;
-}
+} */
 
 .auth-form {
   padding: 30px;
-  background-image: url('https://www.publicdomainpictures.net/pictures/90000/velka/red-black-seamless-tiger-stripes.jpg');
-  height: 220px;
-  width: 220px;
-  margin: 20px;
-  border-radius: 20px;
+  background: darkred;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 4px solid black;
 }
 
 .email-input {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
-
+  height: 30px;
+  width: 300px;
 }
 
 .password-input {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
-
+  height: 30px;
+  width: 300px;
 }
 
 .auth-submit {
-  margin: 10px;
-  padding: 5px;
-  width: 80px;
-  height: 25px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  width: 225px;
+  height: 40px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.create-account {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  width: 225px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: black;
+}
+
+.already-account {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  width: 225px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 5px;
+  border-color: black;
 }
 
 .handle-input {
   margin: 10px;
   padding: 5px;
   border-radius: 5px;
-
+  height: 30px;
+  width: 300px;
 }
 
 .auth-header {
   padding: 0px;
-  font-size: 18px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: black;
+  font-weight: 700;
 }
 
 .signup-form {
   padding: 30px;
-  background-image: url('https://www.publicdomainpictures.net/pictures/90000/velka/red-black-seamless-tiger-stripes.jpg');
-  height: 320px;
-  width: 220px;
-  margin: 20px;
-  border-radius: 20px;
+  background: darkred;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 4px solid black;
 }
 
 .login {
@@ -89,10 +132,16 @@
 }
 
 .demo-login {
-  width: 100px;
-  height: 50px;
+  width: 150px;
+  height: 75px;
   color: white;
-  background: black;
+  background: darkred;
   border-radius: 5px;
-  margin: 10px;
+  margin-left: 15px;
+  border-color: black;
+  font-size: 25px;
+  border: 3px solid black;
+  font-weight: 900;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
