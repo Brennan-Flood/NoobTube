@@ -37,6 +37,10 @@ This project was designed and built in under 1 week.
 3. On the right side of the page, there's a shorter index of videos that the user can use to navigate to other videos. 
 ![](https://user-images.githubusercontent.com/29221213/73291015-fea76480-41c4-11ea-8f5a-f075273cc60e.png)
 
+### User Profile
+1. The user profile is essentially a re-creation of the video index, except only the user's videos appear on the page. 
+2. Each user has a profile page that can be viewed by other users. 
+
 ## Work Breakdown
 * 11/25/19: User Auth & Greeting Page
 * 11/26/19: Video Upload
