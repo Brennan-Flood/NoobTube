@@ -7,12 +7,21 @@ Welcome to NoobTube, a YouTube clone with a twist. Powered by the Mern stack, th
 
 This project was designed and built in under 1 week.
 
-## Technologies and Technical Challenges 
+## Technologies
 * Javascript
 * MongoDB
 * React
 * Express
 * Node.js
+
+## Features
+* User Authentication using BCrypt
+* Video Index
+* Video Show Page
+* User Profile Page
+
+### Video Index
+
 
 ## Work Breakdown
 * 11/25/19: User Auth & Greeting Page
