@@ -26,7 +26,9 @@ This project was designed and built in under 1 week.
 
 1. The video index pulls up a list of linked videos along with the video's thumbnail, title, and author. 
 2. From this index, the user can navigate to the individual video show page. 
-3. 
+3. The thumbnail image is derived from a string manipulation of the YouTube videos url. Below is code snippet that demonstrates how the NoobTube thumbnail is derived. 
+
+![](https://user-images.githubusercontent.com/29221213/73289210-ef72e780-41c1-11ea-8d27-b2682d2e5f32.png)
 
 ## Work Breakdown
 * 11/25/19: User Auth & Greeting Page
@@ -47,7 +49,6 @@ This project was designed and built in under 1 week.
 * Bonus: upvotes/downvotes for comments
 * Bonus: channels and subscriptions
 
-![](https://user-images.githubusercontent.com/29221213/73289210-ef72e780-41c1-11ea-8d27-b2682d2e5f32.png)
 
 ![](https://user-images.githubusercontent.com/29221213/73291015-fea76480-41c4-11ea-8f5a-f075273cc60e.png)
 
