@@ -35,6 +35,7 @@ This project was designed and built in under 1 week.
 1. Main Feature: **Embedded Video**
 2. In addition to the embedded video, the video show page has both a like and comment section. The likes to dislikes ratio is reflected in a bar below the video. The comment section is below the like section. 
 3. On the right side of the page, there's a shorter index of videos that the user can use to navigate to other videos. 
+
 ![](https://user-images.githubusercontent.com/29221213/73291015-fea76480-41c4-11ea-8f5a-f075273cc60e.png)
 
 ### User Profile
