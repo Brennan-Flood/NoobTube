@@ -2,6 +2,7 @@
 
 ## Live Demo
 https://noobtube.herokuapp.com/
+[Live Link](https://noobtube.herokuapp.com/)
 
 ## Background and Overview. 
 Welcome to NoobTube, a YouTube clone with a twist. Powered by the Mern stack, this app provides users with an interactive user experience centered around enjoying quick-scope videos. 
