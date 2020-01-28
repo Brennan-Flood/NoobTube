@@ -32,3 +32,5 @@ This project was designed and built in under 1 week.
 * Bonus: Number of plays
 * Bonus: upvotes/downvotes for comments
 * Bonus: channels and subscriptions
+
+![](https://user-images.githubusercontent.com/29221213/73289210-ef72e780-41c1-11ea-8d27-b2682d2e5f32.png)
