@@ -16,6 +16,7 @@
   flex-direction: column;
   align-items: center;
   border: 4px solid black;
+  padding-top: 120px;
 }
 
 .email-input {
