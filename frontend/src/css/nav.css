@@ -51,6 +51,7 @@
   height: 95px;
   background-size: cover;
   background-image: url(https://wallpaperplay.com/walls/full/6/a/4/153691.jpg);
+  z-index: 1;
   /* background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2014/07/20/400339/20f79f1eb39a313a26bd7c85328344b9-1000.jpg); */
   /* background-image: url(https://www.wallpaperup.com/uploads/wallpapers/2017/05/13/1089678/eb79a821ef28addafe162c3c588e43e4-700.jpg); */
   /* background-image: url(https://images-na.ssl-images-amazon.com/images/I/81%2BMcjk1UkL._SX466_.jpg); */

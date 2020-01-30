@@ -5,10 +5,14 @@
   justify-content: center;
 } */
 
+.auth-modal {
+  padding-top: 120px;
+}
+
 .auth-form {
   padding: 30px;
   background: darkred;
-  height: 400px;
+  height: 350px;
   width: 400px;
   margin: auto;
   border-radius: 5px;
@@ -16,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   border: 4px solid black;
-  padding-top: 120px;
 }
 
 .email-input {
@@ -37,7 +40,6 @@
 
 .auth-submit {
   margin-top: 30px;
-  margin-bottom: 30px;
   padding-top: 8px;
   padding-bottom: 10px;
   width: 225px;
@@ -51,7 +53,7 @@
 }
 
 .create-account {
-  margin-top: 30px;
+  margin-top: 10px;
   margin-bottom: 30px;
   padding-top: 8px;
   padding-bottom: 10px;
@@ -96,7 +98,7 @@
 .signup-form {
   padding: 30px;
   background: darkred;
-  height: 400px;
+  height: 430px;
   width: 400px;
   margin: auto;
   border-radius: 5px;
