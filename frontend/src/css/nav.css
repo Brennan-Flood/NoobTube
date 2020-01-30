@@ -46,6 +46,7 @@
 }
 
 .header-div {
+  position: fixed;
   width: 100%;
   height: 95px;
   background-size: cover;

@@ -77,7 +77,7 @@
   position: fixed;
   visibility: hidden;
   z-index: 4;
-  top: 30px;
+  top: 15px;
   height: 400px;
   width: 400px;
 }
@@ -142,8 +142,14 @@
 .whole-search {
   position: fixed;
   top: 10px;
-  right: 700px;
+  left: 300px;
   width: 400px;
   height: 400px;
   text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  .whole-search {
+    display: none;
+  }
 }
