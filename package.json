@@ -26,7 +26,7 @@
     "react-cursor-position": "^3.0.3",
     "react-player": "^1.14.2",
     "uifx": "^2.0.3",
-    "validator": "^12.1.0",
+    "validator": "^13.7.0",
     "video-react": "^0.14.1"
   },
   "devDependencies": {
